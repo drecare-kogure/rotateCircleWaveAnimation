@@ -1,0 +1,24 @@
+.waveContainer {
+    position: relative;
+    width: 100%;
+    height: 70vw;
+    overflow: hidden;
+}
+
+.waveContainer::before {
+    position: absolute;
+    width: 150vw;
+    height: 130vw;
+    top: -99vw;
+    left: -25vw;
+    border-radius: 50%;
+    content: "";
+    background-color: #3168dd;
+    animation: wave 6s linear infinite;
+}
+
+@keyframes wave {
+    to {
+        transform: rotate(360deg);
+    }
+}
